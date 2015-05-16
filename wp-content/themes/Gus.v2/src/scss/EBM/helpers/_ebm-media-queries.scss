@@ -9,6 +9,7 @@ $xs-only: "#{$screen} and (max-width: #{$screen-phone})" !default;
 $sm-only: "#{$screen} and (min-width: #{$screen-phone}) and (max-width: #{$screen-tablet})" !default;
 
 $md-only: "#{$screen} and (min-width: #{$screen-tablet}) and (max-width: #{$screen-desktop})" !default;
+$md-only-landscape: "#{$screen} and (min-width: #{$screen-tablet}) and (max-width: #{$screen-desktop}) and (orientation: landscape)" !default;
 
 $lg-only: "#{$screen} and (min-width: #{$screen-desktop}) and (max-width: #{$screen-lg-desktop})" !default;
 

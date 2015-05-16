@@ -162,7 +162,10 @@ module.exports = function (grunt) {
       dist: {
         files: {
           // '<%= project.assets %>/js/scripts.min.js': '<%= project.js %>', 
-          '<%= project.assets %>/js/scripts.min.js': [
+          '<%= project.assets %>/js/post-show-control.min.js': [
+            '<%= project.src %>/js/lib/jquery.2.1.4.js',
+            '<%= project.src %>/js/lib/transition.js',
+            '<%= project.src %>/js/lib/zoom.min.js',
             // '<%= project.src %>/js/lib/TweenMax.min.js',
             // '<%= project.src %>/js/lib/ScrollToPlugin.js',
             // '<%= project.src %>/js/lib/ScrollMagic.js',
@@ -424,7 +427,7 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     // 'coffee:dev',
     // 'sass:ebm',
-    'sass:dev',
+    // 'sass:dev',
     // 'bower:dev',
     // 'autoprefixer:dev',
     // 'cssmin:dev',
@@ -433,7 +436,7 @@ module.exports = function (grunt) {
     // 'responsive_images:dev',
     // 'responsive_images_extender:dev',
     // 'connect:livereload',
-    'uglify',
+    // 'uglify',
     // 'open',
     'watch'
   ]);

@@ -15,6 +15,20 @@
 		<?php endif; ?>
 	</div>
 	<div class="header-right">
-		<div class="quote-wrap normalize-text"><h4>Humans do what they do because they can<small> - Self Thought</small></h4></div>
+		<?php if ( is_page('home') ) : ?>
+			<?php $query = new WP_Query('showposts=1'); ?>
+			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+			<div class="quote-wrap normalize-text">
+				<h4><?php the_field('quote'); ?><small> - <?php the_field('quote-author'); ?></small></h4>
+			</div>
+			<?php endwhile;?>
+			<?php wp_reset_query(); ?>
+		<?php else : ?>
+		<div class="quote-wrap normalize-text">
+			<?php while ( have_posts() ) : the_post(); ?>
+				<h4><?php the_field('quote'); ?><small> - <?php the_field('quote-author'); ?></small></h4>
+			<?php endwhile;?>
+		</div>
+		<?php endif; ?>
 	</div>
 </header>

@@ -5,13 +5,13 @@
 			<div class="site-content-left">
 				<div class="post-show-assets">
 					<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail(); ?>
+					<?php the_post_thumbnail('large', array( 'data-action' => 'zoom' )); ?>
 					<?php endif; ?>
 				</div>
 			</div>
 			<div class="site-content-right">
-				<div class="excerpt-wrap pb-28">
-					<p class="lead"><?php the_excerpt(); ?></p>
+				<div class="excerpt-wrap">
+					<?php the_excerpt(); ?>
 				</div>
 				<section class="post-show">
 					<article class="post-show-item">
