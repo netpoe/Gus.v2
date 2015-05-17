@@ -9,6 +9,7 @@
 			<a href="mailto:yo@soygus.com" rel="nofollow" class="icon-social113"></a>
 			<a href="https://mx.linkedin.com/pub/gustavo-andrés-ibarra/27/323/389" rel="nofollow" class="icon-social123" target="_blank"></a>
 			<a href="https://github.com/netpoe" rel="nofollow" class="icon-social138" target="_blank"></a>
+			<a href="https://www.facebook.com/pages/Gus-UIXDeveloper/1455231581436979?sk=timeline" rel="nofollow" class="icon-social122" target="_blank"></a>
 			<a href="https://soundcloud.com/gustavoandreu" rel="nofollow" class="icon-social110" target="_blank"></a>
 		</nav>
 	</div>

@@ -372,13 +372,14 @@ $post-title-height-control: 70px;
 */
 .post-show-assets {
 	padding-top: $excerpt-wrap-height-control + $post-title-height-control + 28;
+	.post-featured-pic,
+	.post-gallery-pic {
+		margin-bottom: 140px;
+		margin-bottom: rem(140px);
+	}
 	img {
 		width: 100%;
 		height: auto;
-	}
-	> img, > div, > pre, > code, > blockquote {
-		margin-bottom: 42px;
-		margin-bottom: rem(42px);
 	}
 }
 

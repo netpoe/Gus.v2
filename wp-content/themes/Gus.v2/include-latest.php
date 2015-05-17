@@ -1,9 +1,9 @@
 <div class="section-title">
 	<div class="section-title-left">
-		<h5>Latest posts</h5>
+		<h5>Keep reading</h5>
 	</div>
 	<nav class="section-title-right">
-		<a href="<?php echo site_url(); ?>/posts-index">See more</a>
+		<a href="<?php echo site_url(); ?>/posts-index">See more posts</a>
 	</nav>
 </div>
 <section class="posts-list">

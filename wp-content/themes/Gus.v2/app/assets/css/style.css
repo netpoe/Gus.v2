@@ -5662,13 +5662,14 @@ body .site-content {
 .post-show-assets {
   padding-top: 175px;
 }
+.post-show-assets .post-featured-pic,
+.post-show-assets .post-gallery-pic {
+  margin-bottom: 140px;
+  margin-bottom: 10rem;
+}
 .post-show-assets img {
   width: 100%;
   height: auto;
-}
-.post-show-assets > img, .post-show-assets > div, .post-show-assets > pre, .post-show-assets > code, .post-show-assets > blockquote {
-  margin-bottom: 42px;
-  margin-bottom: 3rem;
 }
 
 /* 

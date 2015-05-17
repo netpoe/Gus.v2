@@ -4,9 +4,26 @@
 			<?php while( have_posts() ) : the_post(); ?>
 			<div class="site-content-left">
 				<div class="post-show-assets">
+					<?php 
+						$img_id = get_post_thumbnail_id( $post->ID );
+						$alt_text = get_post_meta($img_id , '_wp_attachment_image_alt', true);
+					?>
 					<?php if ( has_post_thumbnail() ) : ?>
-					<?php the_post_thumbnail('large', array( 'data-action' => 'zoom' )); ?>
+						<div class="post-featured-pic">
+							<?php the_post_thumbnail('large', array( 'data-action' => 'zoom' )); ?>
+							<small class="help-block"><?php echo $alt_text; ?></small>
+						</div>
 					<?php endif; ?>
+					<?php
+					$images = get_field('gallery');
+          if( $images ): ?>
+          <?php foreach( $images as $image ): ?>
+          	<div class="post-gallery-pic">
+							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>" data-action="zoom" />
+							<small class="help-block"><?php echo $image['title']; ?></small>
+          	</div>
+          <?php endforeach; ?>
+          <?php endif; ?>
 				</div>
 			</div>
 			<div class="site-content-right">
