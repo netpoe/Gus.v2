@@ -34,8 +34,11 @@
 						</div>
 					</article>
 				</section>
+				<hr>
+				<?php get_template_part('include', 'latest'); ?>
 			</div>
 			<?php endwhile; ?>
+			<?php wp_reset_query(); ?>
 		</main>
 		
 <?php get_footer(); ?>

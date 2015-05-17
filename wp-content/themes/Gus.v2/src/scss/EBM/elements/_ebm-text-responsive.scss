@@ -1,8 +1,26 @@
 /* EBM:RESPONSIVE FONT RESIZE */
 $em-base: $font-size-base;
-
+$line-height-computed-override: $line-height-computed + 8;
 html {
   font-size: $font-size-base;
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {}
+  h1, .h1,
+  h2, .h2,
+  h3, .h3 {
+    margin-top: rem($line-height-computed-override);
+    margin-bottom: rem(($line-height-computed-override / 2));
+  }
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    margin-top: rem(($line-height-computed-override / 2));
+    margin-bottom: rem(($line-height-computed-override / 2));
+  }
+  p {
+    margin: 0 0 ($line-height-computed-override / 2);
+    margin: 0 0 rem(($line-height-computed-override / 2));
+  }
   @media #{$sm-only} {
     font-size: $font-size-base - 2;
     h1, h2, h3, h4, h5, h6,

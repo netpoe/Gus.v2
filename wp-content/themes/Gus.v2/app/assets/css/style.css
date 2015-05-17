@@ -3864,6 +3864,22 @@ input[type="button"].btn-block {
 html {
   font-size: 14px;
 }
+html h1, html .h1,
+html h2, html .h2,
+html h3, html .h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+html h4, html .h4,
+html h5, html .h5,
+html h6, html .h6 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+html p {
+  margin: 0 0 14px;
+  margin: 0 0 1rem;
+}
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   html {
     font-size: 12px;
@@ -5104,6 +5120,9 @@ body .site-content {
   padding: 14px;
   color: #515659;
 }
+.quote-wrap h4 {
+  line-height: 1.4;
+}
 
 /*
 	Nav main
@@ -5169,6 +5188,29 @@ body .site-content {
 .nav-wrap .nav-main li a:hover, .nav-wrap .nav-main li a:focus {
   border-bottom: 1px solid #0D0D0D;
   color: #0D0D0D;
+}
+
+/*
+	Nav post categories
+*/
+.nav-post-categories {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  margin-top: 0;
+  text-align: right;
+}
+.nav-post-categories li {
+  padding-left: 14px;
+  display: inline-block;
+}
+.nav-post-categories li.current-menu-item a {
+  border-bottom: 1px solid #63AB56;
+}
+.nav-post-categories li a {
+  font-family: 'gothambook' !important;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*
@@ -5356,6 +5398,9 @@ body .site-content {
 .posts-list .posts-list-item-left,
 .posts-list .posts-list-item-right {
   width: 50%;
+}
+.posts-list .posts-list-item-right p {
+  display: inline;
 }
 .posts-list .post-title {
   display: -webkit-box;
@@ -5602,6 +5647,13 @@ body .site-content {
 .post-show .post-content p, .post-show .post-content .p, .post-show .post-content span, .post-show .post-content em, .post-show .post-content strong, .post-show .post-content label, .post-show .post-content a, .post-show .post-content i, .post-show .post-content ul, .post-show .post-content ol, .post-show .post-content li {
   font-size: 18px;
   font-size: 1.28571rem;
+}
+.post-show .post-content > p:last-child:after {
+  font-family: 'gothambook' !important;
+  font-weight: 400;
+  font-style: normal;
+  content: ' - FIN';
+  color: #0D0D0D;
 }
 
 /*

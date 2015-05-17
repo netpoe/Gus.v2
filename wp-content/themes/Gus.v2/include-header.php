@@ -15,19 +15,28 @@
 		<?php endif; ?>
 	</div>
 	<div class="header-right">
-		<?php if ( is_page('home') ) : ?>
+		<?php if ( is_page('home') or is_page('posts-index') ) : ?>
 			<?php $query = new WP_Query('showposts=1'); ?>
 			<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 			<div class="quote-wrap normalize-text">
-				<h4><?php the_field('quote'); ?><small> - <?php the_field('quote-author'); ?></small></h4>
+				<?php if ( get_field('quote') ) : ?>
+					<h4><?php the_field('quote'); ?><?php if ( get_field('quote-author') ) : ?><small> - <?php the_field('quote-author'); ?></small><?php endif; ?></h4>
+				<?php else : ?>
+					<h4>Hola, soy <code>gustavo.andres.ibarra</code>, número de serie <code>26:12:19:89</code></h4>
+				<?php endif; ?>
 			</div>
 			<?php endwhile;?>
 			<?php wp_reset_query(); ?>
 		<?php else : ?>
 		<div class="quote-wrap normalize-text">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<h4><?php the_field('quote'); ?><small> - <?php the_field('quote-author'); ?></small></h4>
+				<?php if ( get_field('quote') ) : ?>
+					<h4><?php the_field('quote'); ?><?php if ( get_field('quote-author') ) : ?><small> - <?php the_field('quote-author'); ?></small><?php endif; ?></h4>
+				<?php else : ?>
+					<h4>Hola, soy <code>gustavo.andres.ibarra</code>, número de serie <code>26:12:19:89</code></h4>
+				<?php endif; ?>
 			<?php endwhile;?>
+			<?php wp_reset_query(); ?>
 		</div>
 		<?php endif; ?>
 	</div>

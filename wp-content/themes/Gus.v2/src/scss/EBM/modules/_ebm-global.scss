@@ -105,6 +105,9 @@ $logo-width-control: 100px;
 	min-height: $logo-wrap-height-control;
 	padding: $container-fluid;
 	color: $gray;
+	h4 {
+		line-height: 1.4;
+	}
 }
 
 /*
@@ -136,6 +139,29 @@ $logo-width-control: 100px;
 					border-bottom: 1px solid $gray-darker;
 					color: $gray-darker;
 				}
+			}
+		}
+	}
+}
+
+/*
+	Nav post categories
+*/
+.nav-post-categories {
+	@include list-unstyled;
+	text-align: right;
+	li {
+		padding-left: $container-fluid;
+		display: inline-block;
+		&.current-menu-item {
+			a {
+				border-bottom: 1px solid $brand-primary;
+			}
+		}
+		a {
+			@include book;
+			&:hover {
+
 			}
 		}
 	}
@@ -223,7 +249,11 @@ $excerpt-wrap-height-control: 77px;
 		width: 50%;
 	}
 	.posts-list-item-left {}
-	.posts-list-item-right {}
+	.posts-list-item-right {
+		p {
+			display: inline;
+		}
+	}
 	.post-title {
 		@include flex-column-center;
 		text-transform: capitalize;
@@ -326,6 +356,13 @@ $post-title-height-control: 70px;
 		#{$text-elements-list} {
 			font-size: 18px;
 			font-size: rem(18px);
+		}
+		> p:last-child {
+			&:after {
+				@include book;
+				content: ' - FIN';
+				color: $gray-darker;
+			}
 		}
 	}
 }

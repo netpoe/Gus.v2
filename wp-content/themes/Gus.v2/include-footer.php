@@ -1,7 +1,7 @@
 <footer class="footer">
 	<div class="footer-left">
 		<div>
-			<a href="#" class="text-gray-darker"><h3>CV</h3></a>
+			<a href="<?php echo site_url(); ?>/?p=44" class="text-gray-darker"><h3>CV</h3></a>
 		</div>
 	</div>
 	<div class="footer-right">
