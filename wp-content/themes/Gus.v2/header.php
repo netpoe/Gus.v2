@@ -11,7 +11,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://soygus.com">
     <meta property="og:title" content="Gus | UIXDeveloper">
-    <meta property="og:site_name" content="Soy Gus">
+    <meta property="og:site_name" content="SoyGus.com">
     <meta property="og:description" content="I'm a design-oriented JavaScript fullstack developer.">
     <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/app/assets/img/og-fb.png">
 
@@ -26,7 +26,7 @@
 		<?php wp_head(); ?>
 	</head>
 	<body class="minhp-100">
-		<?php if ( is_home() ) : ?>
+		<?php if ( is_page('home') ) : ?>
 		<section class="site-wrapper home-layout">
 		<?php else : ?>
 		<section class="site-wrapper">
