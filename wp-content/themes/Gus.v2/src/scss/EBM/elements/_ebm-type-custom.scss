@@ -33,10 +33,14 @@ blockquote {
   @include serif-light-italic;
   p {
     @include serif-light-italic;
-    font-size: 24px;
-    font-size: rem(24px);
+    font-size: 24px !important;
+    font-size: rem(24px) !important;
     #{$text-elements-list} {
-      font-size: inherit;
+      font-size: inherit !important;
+      font-family: inherit !important;
+    }
+    strong {
+      color: $gray-darker;
     }
   }
   margin-left: -100%;
