@@ -75,7 +75,7 @@ $webfont-path: '../fonts/';
 // SERIFS
 @mixin serif-light { font-family: 'Museo Slab 100' !important; font-weight: 100; font-style: normal;}
 .serif-light {@include serif-light;}
-@mixin serif-light-italic { font-family: 'Museo Slab 100 Italic' !important; font-weight: 100; font-style: normal;}
+@mixin serif-light-italic { font-family: 'Museo Slab 100 Italic' !important; font-weight: 100; font-style: italic;}
 .serif-light-italic {@include serif-light-italic;}
 // @mixin serif-light { font-family: $font-family-serif !important; font-weight: 300; font-style: normal;}
 // .serif-light {@include serif-light;}

@@ -5767,7 +5767,7 @@ a.bg-hover-linkedin:not(.btn):hover,
 .serif-light-italic {
   font-family: 'Museo Slab 100 Italic' !important;
   font-weight: 100;
-  font-style: normal;
+  font-style: italic;
 }
 
 .serif-book {
@@ -6629,7 +6629,7 @@ p a, .p a, span a, em a, strong a, label a, a a, i a, ul a, ol a, li a {
 em {
   font-family: 'Museo Slab 100 Italic' !important;
   font-weight: 100;
-  font-style: normal;
+  font-style: italic;
 }
 
 strong {
@@ -6641,7 +6641,7 @@ strong {
 blockquote {
   font-family: 'Museo Slab 100 Italic' !important;
   font-weight: 100;
-  font-style: normal;
+  font-style: italic;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -6664,8 +6664,18 @@ h1 span, h1 strong, h1 a, h1 em, h1 small, h2 span, h2 strong, h2 a, h2 em, h2 s
 blockquote {
   font-family: 'Museo Slab 100 Italic' !important;
   font-weight: 100;
-  font-style: normal;
+  font-style: italic;
   margin-left: -100%;
+}
+blockquote p {
+  font-family: 'Museo Slab 100 Italic' !important;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 24px;
+  font-size: 1.71429rem;
+}
+blockquote p p, blockquote p .p, blockquote p span, blockquote p em, blockquote p strong, blockquote p label, blockquote p a, blockquote p i, blockquote p ul, blockquote p ol, blockquote p li {
+  font-size: inherit;
 }
 
 pre {
