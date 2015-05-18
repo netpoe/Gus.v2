@@ -52,7 +52,11 @@
 					</article>
 				</section>
 				<hr>
-				<?php get_template_part('include', 'latest'); ?>
+				<?php 
+					foreach(get_the_category() as $category) {
+						get_template_part('include', 'latest-' . $category->slug);
+					} 
+				?>
 			</div>
 			<?php endwhile; ?>
 			<?php wp_reset_query(); ?>

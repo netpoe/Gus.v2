@@ -25,6 +25,9 @@ blockquote {
 #{$headings-list}, 
 #{$headings-class-list} {
   @include book;
+  span, strong, a, em, small {
+    @include book;
+  }
 }
 blockquote {
   @include serif-light-italic;
