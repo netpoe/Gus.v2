@@ -426,7 +426,7 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('default', [
     // 'coffee:dev',
-    // 'sass:ebm',
+    'sass:ebm',
     // 'sass:dev',
     // 'bower:dev',
     // 'autoprefixer:dev',
@@ -448,12 +448,12 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('build', [
     'sass:dist',
-    'bower:dist',
+    // 'bower:dist',
     // 'autoprefixer:dist',
-    'cssmin:dist',
-    'clean:dist',
+    // 'cssmin:dist',
+    // 'clean:dist',
     // 'jshint',
-    'uglify'
+    // 'uglify'
   ]);
 
 };

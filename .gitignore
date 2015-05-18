@@ -65,3 +65,7 @@ $RECYCLE.BIN/
 ## WORDPRESS
 wp-content/uploads/**
 wp-config.php
+
+## SSH
+ssh_Gus.v2
+ssh_Gus.v2.pub
