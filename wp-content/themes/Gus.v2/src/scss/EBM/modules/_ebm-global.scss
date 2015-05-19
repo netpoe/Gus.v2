@@ -515,10 +515,13 @@ $post-title-height-control: 70px;
 	}
 }
 @media #{$lg-only} {}
-@media only screen and (max-height: 630px) {
+@media only screen and (max-height: 840px) {
 	.site-wrapper {
 		&.home-layout {
 			@include calc(min-height, "100vh - #{$padding-control * 2}");
+			.content-wrap {
+				height: auto;
+			}
 			.excerpt-wrap {
 				h1 {
 					font-size: $font-size-h4;

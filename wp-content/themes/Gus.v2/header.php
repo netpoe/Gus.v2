@@ -10,7 +10,7 @@
 		
 		<?php wp_head(); ?>
 	</head>
-	<body class="minhp-100">
+	<body>
 		<?php if ( is_page('home') ) : ?>
 		<section class="site-wrapper home-layout">
 		<?php else : ?>

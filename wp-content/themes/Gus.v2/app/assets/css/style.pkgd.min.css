@@ -7670,10 +7670,13 @@ body .site-content {
     min-height: 240px;
   }
 }
-@media only screen and (max-height: 630px) {
+@media only screen and (max-height: 840px) {
   .site-wrapper.home-layout {
     min-height: -webkit-calc(100vh - 70px);
     min-height: calc(100vh - 70px);
+  }
+  .site-wrapper.home-layout .content-wrap {
+    height: auto;
   }
   .site-wrapper.home-layout .excerpt-wrap h1 {
     font-size: 18px;
