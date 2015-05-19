@@ -7671,6 +7671,10 @@ body .site-content {
   }
 }
 @media only screen and (max-height: 630px) {
+  .site-wrapper.home-layout {
+    min-height: -webkit-calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
+  }
   .site-wrapper.home-layout .excerpt-wrap h1 {
     font-size: 18px;
   }

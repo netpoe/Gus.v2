@@ -518,6 +518,7 @@ $post-title-height-control: 70px;
 @media only screen and (max-height: 630px) {
 	.site-wrapper {
 		&.home-layout {
+			@include calc(min-height, "100vh - #{$padding-control * 2}");
 			.excerpt-wrap {
 				h1 {
 					font-size: $font-size-h4;
