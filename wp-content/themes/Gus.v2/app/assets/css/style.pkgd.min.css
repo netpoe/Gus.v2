@@ -6647,6 +6647,7 @@ html {
   margin-bottom: 1.28571rem;
 }
 .post-show .post-content ul {
+  background-color: #fbfcfd;
   list-style-position: inside;
   padding: 28px;
   padding: 2rem;
@@ -7238,7 +7239,8 @@ body .site-content {
   -moz-flex-direction: row;
   flex-direction: row;
   -ms-flex-direction: row;
-  margin-bottom: 14px;
+  margin-bottom: 21px;
+  margin-bottom: 1.5rem;
 }
 .posts-list .posts-list-item:before, .posts-list .posts-list-item:after {
   content: " ";

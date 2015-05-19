@@ -242,7 +242,8 @@ $excerpt-wrap-height-control: 77px;
 	.posts-list-item {
 		@include flex-row;
 		@include clearfix;
-		margin-bottom: $container-fluid;
+		margin-bottom: $container-fluid + 7;
+		margin-bottom: rem($container-fluid + 7);
 	}
 	.posts-list-item-left,
 	.posts-list-item-right {
