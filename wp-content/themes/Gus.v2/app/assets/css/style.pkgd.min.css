@@ -6619,6 +6619,10 @@ html {
 .post-show .post-content pre,
 .post-show .post-content ul {
   margin-left: -100% !important;
+  margin-top: 28px;
+  margin-bottom: 18px;
+  margin-top: 2rem;
+  margin-bottom: 1.28571rem;
 }
 .post-show .post-content blockquote {
   font-family: 'Museo Slab 100 Italic' !important;
@@ -6641,10 +6645,6 @@ html {
 }
 .post-show .post-content pre {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  margin-top: 28px;
-  margin-bottom: 18px;
-  margin-top: 2rem;
-  margin-bottom: 1.28571rem;
 }
 .post-show .post-content ul {
   background-color: #fbfcfd;
