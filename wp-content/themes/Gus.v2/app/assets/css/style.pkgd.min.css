@@ -6615,6 +6615,47 @@ html {
 /*
   Global text configuration
 */
+.post-show .post-content blockquote,
+.post-show .post-content pre,
+.post-show .post-content ul {
+  margin-left: -100% !important;
+}
+.post-show .post-content blockquote {
+  font-family: 'Museo Slab 100 Italic' !important;
+  font-weight: 100;
+  font-style: normal;
+}
+.post-show .post-content blockquote p {
+  font-family: 'Museo Slab 100 Italic' !important;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 24px !important;
+  font-size: 1.71429rem !important;
+}
+.post-show .post-content blockquote p p, .post-show .post-content blockquote p .p, .post-show .post-content blockquote p span, .post-show .post-content blockquote p em, .post-show .post-content blockquote p strong, .post-show .post-content blockquote p label, .post-show .post-content blockquote p a, .post-show .post-content blockquote p i, .post-show .post-content blockquote p ul, .post-show .post-content blockquote p ol, .post-show .post-content blockquote p li {
+  font-size: inherit !important;
+  font-family: inherit !important;
+}
+.post-show .post-content blockquote p strong {
+  color: #0D0D0D;
+}
+.post-show .post-content pre {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  margin-top: 28px;
+  margin-bottom: 18px;
+  margin-top: 2rem;
+  margin-bottom: 1.28571rem;
+}
+.post-show .post-content ul {
+  list-style-position: inside;
+  padding: 28px;
+  padding: 2rem;
+}
+.post-show .post-content ul li {
+  list-style-type: circle;
+  margin-bottom: 3px;
+}
+
 p, .p, span, em, strong, label, a, i, ul, ol, li {
   font-family: 'Museo Slab 100' !important;
   font-weight: 100;
@@ -6635,12 +6676,6 @@ em {
 strong {
   font-family: 'Museo Slab 300' !important;
   font-weight: 300;
-  font-style: normal;
-}
-
-blockquote {
-  font-family: 'Museo Slab 100 Italic' !important;
-  font-weight: 100;
   font-style: normal;
 }
 
@@ -6666,32 +6701,6 @@ h1 span, h1 strong, h1 a, h1 em, h2 span, h2 strong, h2 a, h2 em, h3 span, h3 st
 .h1 a,
 .h1 em, .h2 span, .h2 strong, .h2 a, .h2 em, .h3 span, .h3 strong, .h3 a, .h3 em, .h4 span, .h4 strong, .h4 a, .h4 em, .h5 span, .h5 strong, .h5 a, .h5 em, .h6 span, .h6 strong, .h6 a, .h6 em {
   font-size: inherit !important;
-}
-
-blockquote {
-  font-family: 'Museo Slab 100 Italic' !important;
-  font-weight: 100;
-  font-style: normal;
-  margin-left: -100%;
-}
-blockquote p {
-  font-family: 'Museo Slab 100 Italic' !important;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 24px !important;
-  font-size: 1.71429rem !important;
-}
-blockquote p p, blockquote p .p, blockquote p span, blockquote p em, blockquote p strong, blockquote p label, blockquote p a, blockquote p i, blockquote p ul, blockquote p ol, blockquote p li {
-  font-size: inherit !important;
-  font-family: inherit !important;
-}
-blockquote p strong {
-  color: #0D0D0D;
-}
-
-pre {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  margin-left: -100% !important;
 }
 
 a {
