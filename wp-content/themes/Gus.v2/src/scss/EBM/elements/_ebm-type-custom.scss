@@ -28,6 +28,9 @@ blockquote {
   span, strong, a, em, small {
     @include book;
   }
+  span, strong, a, em {
+    font-size: inherit !important;
+  }
 }
 blockquote {
   @include serif-light-italic;

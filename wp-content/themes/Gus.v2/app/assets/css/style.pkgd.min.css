@@ -6660,6 +6660,13 @@ h1 span, h1 strong, h1 a, h1 em, h1 small, h2 span, h2 strong, h2 a, h2 em, h2 s
   font-weight: 400;
   font-style: normal;
 }
+h1 span, h1 strong, h1 a, h1 em, h2 span, h2 strong, h2 a, h2 em, h3 span, h3 strong, h3 a, h3 em, h4 span, h4 strong, h4 a, h4 em, h5 span, h5 strong, h5 a, h5 em, h6 span, h6 strong, h6 a, h6 em,
+.h1 span,
+.h1 strong,
+.h1 a,
+.h1 em, .h2 span, .h2 strong, .h2 a, .h2 em, .h3 span, .h3 strong, .h3 a, .h3 em, .h4 span, .h4 strong, .h4 a, .h4 em, .h5 span, .h5 strong, .h5 a, .h5 em, .h6 span, .h6 strong, .h6 a, .h6 em {
+  font-size: inherit !important;
+}
 
 blockquote {
   font-family: 'Museo Slab 100 Italic' !important;
