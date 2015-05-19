@@ -7239,6 +7239,8 @@ body .site-content {
   -moz-flex-direction: row;
   flex-direction: row;
   -ms-flex-direction: row;
+  padding-right: 14px;
+  padding-right: 1rem;
   margin-bottom: 21px;
   margin-bottom: 1.5rem;
 }
