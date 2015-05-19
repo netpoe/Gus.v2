@@ -515,6 +515,22 @@ $post-title-height-control: 70px;
 	}
 }
 @media #{$lg-only} {}
+@media only screen and (max-height: 630px) {
+	.site-wrapper {
+		&.home-layout {
+			.excerpt-wrap {
+				h1 {
+					font-size: $font-size-h4;
+				}
+			}
+			.posts-list-item-right {
+				p {
+					font-size: $font-size-base - 2;
+				}
+			}
+		}
+	}
+}
 @media only screen and (min-width: 1500px) {
 	html {
 		font-size: $font-size-base + 2;

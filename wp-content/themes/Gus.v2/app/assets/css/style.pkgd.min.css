@@ -7670,6 +7670,14 @@ body .site-content {
     min-height: 240px;
   }
 }
+@media only screen and (max-height: 630px) {
+  .site-wrapper.home-layout .excerpt-wrap h1 {
+    font-size: 18px;
+  }
+  .site-wrapper.home-layout .posts-list-item-right p {
+    font-size: 12px;
+  }
+}
 @media only screen and (min-width: 1500px) {
   html {
     font-size: 16px;
