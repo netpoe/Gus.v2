@@ -6621,8 +6621,8 @@ p, .p, span, em, strong, label, a, i, ul, ol, li {
   font-style: normal;
 }
 p a, .p a, span a, em a, strong a, label a, a a, i a, ul a, ol a, li a {
-  font-family: 'Museo Slab 100' !important;
-  font-weight: 100;
+  font-family: 'Museo Slab 300' !important;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -6692,8 +6692,8 @@ a {
 }
 
 a {
-  font-family: 'gothamlight' !important;
-  font-weight: 300;
+  font-family: 'gothambook' !important;
+  font-weight: 400;
   font-style: normal;
   border-bottom: 1px solid white;
 }
@@ -6716,78 +6716,6 @@ a:hover, a:focus, a:active {
   text-align: right !important;
 }
 
-@media only screen and (max-width: 480px) {
-  .text-left-xs {
-    text-align: left !important;
-  }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-  .text-left-sm {
-    text-align: left !important;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .text-left-md {
-    text-align: left !important;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
-  .text-left-lg {
-    text-align: left !important;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .text-right-xs {
-    text-align: right !important;
-  }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-  .text-right-sm {
-    text-align: right !important;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .text-right-md {
-    text-align: right !important;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
-  .text-right-lg {
-    text-align: right !important;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .text-center-xs {
-    text-align: center !important;
-  }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-  .text-center-sm {
-    text-align: center !important;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .text-center-md {
-    text-align: center !important;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
-  .text-center-lg {
-    text-align: center !important;
-  }
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -6804,42 +6732,9 @@ a.not-underline:hover {
   text-decoration: none;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  .text-gradient {
-    background: -webkit-linear-gradient(left, #63AB56, #4A90E2, #63AB56) repeat;
-    background: linear-gradient(to right, #63AB56, #4A90E2, #63AB56) repeat;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    text-fill-color: transparent;
-  }
-}
-.lh-sm {
-  line-height: 1.35714rem;
-}
-
-.lh-md {
-  line-height: 1.5rem;
-}
-
-.lh-lg {
-  line-height: 2rem;
-}
-
 /*
   Text shadow
 */
-.text-shadow {
-  text-shadow: rgba(13, 13, 13, 0.33) 0 2px 1px;
-}
-.text-shadow p, .text-shadow .p, .text-shadow span, .text-shadow em, .text-shadow strong, .text-shadow label, .text-shadow a, .text-shadow i, .text-shadow ul, .text-shadow ol, .text-shadow li,
-.text-shadow h1, .text-shadow h2, .text-shadow h3, .text-shadow h4, .text-shadow h5, .text-shadow h6,
-.text-shadow .h1, .text-shadow .h2, .text-shadow .h3, .text-shadow .h4, .text-shadow .h5, .text-shadow .h6 {
-  text-shadow: rgba(13, 13, 13, 0.33) 0 2px 1px;
-}
-
 html,
 body {
   background-color: #F0F0F0;
