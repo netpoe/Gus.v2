@@ -356,11 +356,11 @@ textarea {
 }
 
 a {
-  color: #63AB56;
+  color: #559449;
   text-decoration: none;
 }
 a:hover, a:focus {
-  color: #45793c;
+  color: #386130;
   text-decoration: underline;
 }
 a:focus {
@@ -2461,7 +2461,7 @@ select[multiple].input-lg {
 }
 
 .btn-link {
-  color: #63AB56;
+  color: #559449;
   font-weight: normal;
   border-radius: 0;
 }
@@ -2474,7 +2474,7 @@ select[multiple].input-lg {
   border-color: transparent;
 }
 .btn-link:hover, .btn-link:focus {
-  color: #45793c;
+  color: #386130;
   text-decoration: underline;
   background-color: transparent;
 }
