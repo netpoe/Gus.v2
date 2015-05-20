@@ -11,7 +11,6 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-		<?php include_once("analyticstracking.php") ?>
 		<?php get_template_part('include', 'googletagmanager'); ?>
 		<?php if ( is_page('home') ) : ?>
 		<section class="site-wrapper home-layout">
