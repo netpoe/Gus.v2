@@ -171,12 +171,18 @@ $logo-width-control: 100px;
 	Site content 
 */
 .site-content {
-	@include flex-row;
-	@include clearfix;
+	.site-content-row {
+		@include flex-row;
+		@include clearfix;
+		&:nth-child(2) {
+			.site-content-right {
+				border: none;
+			}
+		}
+	}
 	.site-content-left,
 	.site-content-right {
 		padding: $container-fluid;
-		width: 50%;
 	}
 	.site-content-left {
 		padding-left: $container-fluid + $logo-width-control;
@@ -319,16 +325,17 @@ $excerpt-wrap-height-control: 77px;
 $post-title-height-control: 70px;
 .post-show {
 	margin-bottom: 70px;
-	.post-show-item {
+	.post-show-item,
+	.post-show-item-info {
 		@include flex-row;
 		@include clearfix;
 	}
-	.post-show-item-left,
-	.post-show-item-right {
-		width: 50%;
+	.post-title,
+	.post-meta {
+		@include flex-column-center;
+		@include normalize-text;
+		min-height: $post-title-height-control;
 	}
-	.post-show-item-left {}
-	.post-show-item-right {}
 	.post-title {
 		text-transform: capitalize;
 		h1 {
@@ -337,14 +344,8 @@ $post-title-height-control: 70px;
 			font-size: $font-size-h3;
 			font-size: rem($font-size-h3);
 		}
-	}	
-	.post-title,
-	.post-info {
-		@include flex-column-center;
-		@include normalize-text;
-		min-height: $post-title-height-control;
 	}
-	.post-info {
+	.post-meta {
 		text-align: right;
 		nav {
 			> span, > a {
@@ -352,9 +353,17 @@ $post-title-height-control: 70px;
 			}
 		}
 	}
-	.post-meta {
+	.post-category {
 		padding-left: ($container-fluid) + 4;
 	}
+	.post-show-item-left,
+	.post-show-item-right,
+	.post-title,
+	.post-meta {
+		width: 50%;
+	}
+	.post-show-item-left {}
+	.post-show-item-right {}
 	.post-content {
 		#{$text-elements-list} {
 			font-size: 18px;
@@ -378,9 +387,10 @@ $post-title-height-control: 70px;
 	Post show assets
 */
 .post-show-assets {
-	padding-top: $excerpt-wrap-height-control + $post-title-height-control + 28;
+	// padding-top: $excerpt-wrap-height-control + $post-title-height-control + 28;
 	.post-featured-pic,
-	.post-gallery-pic {
+	.post-gallery-pic,
+	.post-featured-video {
 		margin-bottom: 140px;
 		margin-bottom: rem(140px);
 	}
@@ -439,11 +449,11 @@ $post-title-height-control: 70px;
 		.site-content-left {
 			padding-left: $container-fluid;
 		}
-		.post-info,
+		.post-meta,
 		.post-title {
 			min-height: 35px;
 		}
-		.post-info {
+		.post-meta {
 			text-align: left;
 			padding-left: 0;
 			nav {
@@ -466,7 +476,7 @@ $post-title-height-control: 70px;
 				border: none;
 			}
 		}
-		.post-meta {
+		.post-category {
 			padding-left: 0;
 		}
 		.nav-social-anchors {
