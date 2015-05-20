@@ -61,6 +61,10 @@
 								<div class="post-content">
 									<?php the_content(); ?>
 								</div>
+								<div class="post-share-input input-group">
+									<span class="input-group-addon" id="share-this-post" aria-describedby="share-this-post">Share</span>
+									<input type="text" class="form-control" value="<?php the_permalink(); ?>?utm_source=facebook&utm_medium=fanpage&utm_term=intro_2015&utm_content=fanpage_blog&utm_campaign=soygus_2015" onclick="select()">
+								</div>
 							</div>
 						</article>
 					</div>
