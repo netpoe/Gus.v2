@@ -6618,7 +6618,7 @@ html {
 .post-show .post-content blockquote,
 .post-show .post-content pre,
 .post-show .post-content ul {
-  margin-left: -100% !important;
+  margin-left: -100%;
   margin-top: 28px;
   margin-bottom: 18px;
   margin-top: 2rem;
@@ -7582,7 +7582,8 @@ body .site-content {
 }
 @media only screen and (max-width: 768px) {
   .site-wrapper .site-content-row,
-  .site-wrapper .post-show-item {
+  .site-wrapper .post-show-item,
+  .site-wrapper .post-show-item-info {
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -7610,8 +7611,15 @@ body .site-content {
   .site-wrapper .site-content-left {
     padding-left: 14px;
   }
+  .site-wrapper .post-featured-pic,
+  .site-wrapper .post-gallery-pic,
+  .site-wrapper .post-featured-video {
+    margin-bottom: 14px;
+    margin-bottom: 1rem;
+  }
   .site-wrapper .post-meta,
   .site-wrapper .post-title {
+    width: 100%;
     min-height: 35px;
   }
   .site-wrapper .post-meta {
@@ -7626,7 +7634,8 @@ body .site-content {
     padding-top: 0;
   }
   .site-wrapper blockquote,
-  .site-wrapper pre {
+  .site-wrapper pre,
+  .site-wrapper ul {
     margin-left: 0 !important;
   }
   .site-wrapper .post-title h1 {

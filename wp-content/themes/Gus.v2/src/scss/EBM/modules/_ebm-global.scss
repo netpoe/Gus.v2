@@ -437,7 +437,8 @@ $post-title-height-control: 70px;
 @media #{$sm-down} {
 	.site-wrapper {
 		.site-content-row,
-		.post-show-item {
+		.post-show-item,
+		.post-show-item-info {
 			@include flex-column;
 		}
 		.site-content-left,
@@ -449,8 +450,15 @@ $post-title-height-control: 70px;
 		.site-content-left {
 			padding-left: $container-fluid;
 		}
+		.post-featured-pic,
+		.post-gallery-pic,
+		.post-featured-video {
+			margin-bottom: $container-fluid;
+			margin-bottom: rem($container-fluid);
+		}
 		.post-meta,
 		.post-title {
+			width: 100%;
 			min-height: 35px;
 		}
 		.post-meta {
@@ -467,7 +475,8 @@ $post-title-height-control: 70px;
 			padding-top: 0;
 		}
 		blockquote,
-		pre {
+		pre,
+		ul {
 			margin-left: 0 !important;
 		}
 		.post-title {
