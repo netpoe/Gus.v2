@@ -6647,14 +6647,14 @@ html {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .post-show .post-content ul {
-  background-color: #fbfcfd;
-  list-style-position: inside;
-  padding: 28px;
-  padding: 2rem;
+  list-style: none;
+  padding-left: 20px;
 }
 .post-show .post-content ul li {
-  list-style-type: circle;
+  border-left: 3px solid #e6eaef;
+  background-color: #fbfcfd;
   margin-bottom: 3px;
+  padding-left: 9px;
 }
 
 p, .p, span, em, strong, label, a, i, ul, ol, li {

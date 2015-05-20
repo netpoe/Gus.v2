@@ -37,13 +37,13 @@ html {
       font-family: $font-family-monospace;
     }
     ul {
-      background-color: $blue-lighter;
-      list-style-position: inside;
-      padding: 28px;
-      padding: rem(28px);
+      list-style: none;
+      padding-left: 20px;
       li {
-        list-style-type: circle;
+        border-left: 3px solid $blue-light;
+        background-color: $blue-lighter;
         margin-bottom: 3px;
+        padding-left: 9px;
       }
     }
   }
