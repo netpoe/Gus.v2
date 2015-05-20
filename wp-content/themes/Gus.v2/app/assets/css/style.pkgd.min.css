@@ -7581,7 +7581,7 @@ body .site-content {
   }
 }
 @media only screen and (max-width: 768px) {
-  .site-wrapper .site-content,
+  .site-wrapper .site-content-row,
   .site-wrapper .post-show-item {
     display: -webkit-box;
     display: -moz-box;

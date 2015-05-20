@@ -436,7 +436,7 @@ $post-title-height-control: 70px;
 }
 @media #{$sm-down} {
 	.site-wrapper {
-		.site-content,
+		.site-content-row,
 		.post-show-item {
 			@include flex-column;
 		}
