@@ -14,6 +14,11 @@
 							<small class="help-block"><?php echo $alt_text; ?></small>
 						</div>
 					<?php endif; ?>
+					<?php get_field('youtube_id'); ?>
+						<div class="post-featured-video">
+							<iframe width="100%" height="490" src="https://www.youtube.com/embed/<?php the_field('youtube_id'); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+							<small class="help-block"><?php the_field('youtube_video_description'); ?></small>
+						</div>
 					<?php
 					$images = get_field('gallery');
           if( $images ): ?>
