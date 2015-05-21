@@ -42,6 +42,12 @@
 									<small class="help-block"><?php the_field('youtube_video_description'); ?></small>
 								</div>
 							<?php endif; ?>
+							<?php if ( get_field('vimeo_id') ) : ?>
+								<div class="post-featured-video">
+									<iframe src="https://player.vimeo.com/video/<?php the_field('vimeo_id'); ?>?color=ffffff&title=0&byline=0&portrait=0" width="100%" height="210" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+									<small class="help-block"><?php the_field('vimeo_video_description'); ?></small>
+								</div>
+							<?php endif; ?>
 							<?php
 							$images = get_field('gallery');
 		          if( $images ): ?>
@@ -62,7 +68,7 @@
 									<?php the_content(); ?>
 								</div>
 								<div class="post-share-input input-group">
-									<span class="input-group-addon" id="share-this-post" aria-describedby="share-this-post">Share</span>
+									<span class="input-group-addon" id="share-this-post" aria-describedby="share-this-post">Cher:</span>
 									<input type="text" class="form-control" value="<?php the_permalink(); ?>?utm_source=facebook&utm_medium=fanpage&utm_term=intro_2015&utm_content=fanpage_blog&utm_campaign=soygus_2015" onclick="select()">
 								</div>
 							</div>
