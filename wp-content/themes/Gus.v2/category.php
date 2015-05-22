@@ -11,7 +11,8 @@
 				<div class="site-content-left"></div>
 				<div class="site-content-right">
 					<div class="excerpt-wrap">
-						<?php while( have_posts() ) : the_post(); ?>
+						<?php $query = new WP_Query('showposts=1') ?>
+						<?php while( $query->have_posts() ) : $query->the_post(); ?>
 							<?php the_excerpt(); ?>
 						<?php endwhile; ?>
 					</div>
