@@ -53,7 +53,11 @@
 		          if( $images ): ?>
 		          <?php foreach( $images as $image ): ?>
 		          	<div class="post-gallery-pic">
-									<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>" data-action="zoom" />
+									<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['title']; ?>" data-action="zoom"
+									    srcset="<?php echo $image['sizes']['medium']; ?> 480w, 
+									            <?php echo $image['sizes']['medium']; ?> 720w, 
+									            <?php echo $image['sizes']['large']; ?> 940w, 
+									            <?php echo $image['url']; ?> 1140w">
 									<small class="help-block"><?php echo $image['title']; ?></small>
 		          	</div>
 		          <?php endforeach; ?>

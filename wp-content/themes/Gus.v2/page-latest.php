@@ -31,7 +31,7 @@
 						</nav>
 					</div>
 					<section class="posts-list">
-						<?php $query = new WP_Query('showposts=5'); ?>
+						<?php $query = new WP_Query('showposts=14'); ?>
 						<?php while( $query->have_posts() ) : $query->the_post(); ?>
 							<article class="posts-list-item">
 								<div class="posts-list-item-left">
