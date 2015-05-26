@@ -1,7 +1,7 @@
 <?php
 
 /*
-*  acf_gallery_field_plugin_update
+*  acf_repeater_plugin_update
 *
 *  this class will connect with and download updates from the ACF website
 *
@@ -14,7 +14,7 @@
 *
 */
 
-class acf_gallery_field_plugin_update
+class acf_repeater_plugin_update
 {
 	var $settings;
 	
@@ -32,89 +32,15 @@ class acf_gallery_field_plugin_update
 		// vars
 		$this->settings = array(
 			'version'	=>	'',
-			'remote'	=>	'http://download.advancedcustomfields.com/GF72-8ME6-JS15-3PZC/info/',
+			'remote'	=>	'http://download.advancedcustomfields.com/QJF7-L4IX-UCNP-RF2W/info/',
 			'basename'	=>	plugin_basename( str_replace('-update.php', '.php', __FILE__) ),
 			'slug'		=>	dirname( plugin_basename( str_replace('-update.php', '.php', __FILE__) ) )
 		);
 		
 		
-		// actions
-		add_action('in_plugin_update_message-' . $this->settings['basename'], array($this, 'in_plugin_update_message'), 10, 2 );
-		
-		
 		// filters
 		add_filter('pre_set_site_transient_update_plugins', array($this, 'check_update'));
 		add_filter('plugins_api', array($this, 'check_info'), 10, 3);
-	}
-	
-	
-	
-	/*
-	*  in_plugin_update_message
-	*
-	*  Displays an update message for plugin list screens.
-	*  Shows only the version updates from the current until the newest version
-	*
-	*  @type	function
-	*  @date	5/06/13
-	*
-	*  @param	{array}		$plugin_data
-	*  @param	{object}	$r
-	*/
-
-	function in_plugin_update_message( $plugin_data, $r )
-	{
-		// vars
-		$readme = wp_remote_fopen( str_replace( '/info/' , '/trunk/readme.txt', $this->settings['remote'] ) );
-		$regexp = '/== Changelog ==(.*)= ' . $this->get_version() . ' =/sm';
-		$o = '';
-		
-		
-		// validate
-		if( !$readme )
-		{
-			return;
-		}
-
-
-		// regexp
-		preg_match( $regexp, $readme, $matches );
-		
-		
-		if( ! isset($matches[1]) )
-		{
-			return;
-		}
-		
-		
-		// add style	
-		$o .= '<style type="text/css">';
-		$o .= '#advanced-custom-fields-gallery-field + .plugin-update-tr .update-message { background: #EAF2FA; border: #C7D7E2 solid 1px; padding: 10px; }';
-		$o .= '</style>';
-
-
-		// render changelog
-		$changelog = explode('*', $matches[1]);
-		array_shift( $changelog );
-
-
-		if( !empty($changelog) )
-		{
-			$o .= '<div class="acf-plugin-update-info">';
-			$o .= '<h3>' . __("What's new", 'acf') . '</h3>';
-			$o .= '<ul>';
-
-			foreach( $changelog as $item )
-			{
-				$o .= '<li>' . make_clickable( $item ) . '</li>';
-			}
-
-			$o .= '</ul></div>';
-		}
-
-		echo $o;
-
-
 	}
 	
 	
@@ -253,7 +179,7 @@ class acf_gallery_field_plugin_update
 // instantiate
 if( is_admin() )
 {
-	new acf_gallery_field_plugin_update();
+	new acf_repeater_plugin_update();
 }
 
 ?>

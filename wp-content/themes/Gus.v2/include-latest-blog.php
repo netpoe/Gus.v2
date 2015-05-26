@@ -16,7 +16,7 @@
 				<nav class="post-meta"><?php the_category(' '); ?></nav>
 			</div>
 			<div class="posts-list-item-right">
-				<?php the_excerpt(); ?> <small class="icon-chevron-right"></small> <a href="<?php the_permalink(); ?>">more</a>
+				<?php the_excerpt(); ?><br><small><a href="<?php the_permalink(); ?>">read</a></small>
 			</div>
 		</article>
 	<?php endwhile; ?>

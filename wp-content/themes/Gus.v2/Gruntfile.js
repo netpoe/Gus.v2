@@ -204,7 +204,7 @@ module.exports = function (grunt) {
       },
       dist: {
         options: {
-          style: 'expanded'
+          style: 'compressed'
         },
         files: {
           '<%= project.assets %>/css/style.pkgd.min.css': '<%= project.src %>/scss/style.pkgd.scss'
@@ -392,7 +392,10 @@ module.exports = function (grunt) {
       },
       sass: {
         files: '<%= project.src %>/scss/{,*/}*/{,*/}*.{scss,sass}',
-        tasks: ['sass:dev']
+        tasks: [
+        // 'sass:dev', 
+        'sass:dist'
+        ]
       },
       coffee: {
         files: '<%= project.src %>/coffee/*.coffee',
@@ -454,6 +457,7 @@ module.exports = function (grunt) {
     // 'clean:dist',
     // 'jshint',
     // 'uglify'
+    'watch'
   ]);
 
 };
